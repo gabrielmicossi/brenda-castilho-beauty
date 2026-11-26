@@ -24,7 +24,18 @@
   <meta property="og:title" content="Brenda Castilho | Studio Beauty & Nail Academy • Unhas de Alto Padrão & Formações" />
   <meta property="og:description" content="Ex-arquiteta e Educadora Internacional especializada em naturalidade. Conheça o Catálogo de Procedimentos Exclusivos e os Cursos Presenciais da Brenda Castilho Nail Academy." />
   <meta property="og:image" content="https://brendacastilhobeauty.pt/assets/brenda-bio-dark.jpg" />
-  <link rel="icon" type="image/png" href="assets/logo-bc.png" />
+
+  <!-- Favicon & Google Search SERP Icons (Múltiplos de 48px conforme diretrizes oficiais do Google) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="144x144" href="/favicon-144x144.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#18261F" />
 
   <!-- Google Fonts: Tipografias do PDF Cópia de Site público BIO.pdf -->
   <!-- Cormorant Garamond (equivalente editorial a Literaturnaya Regular/Italic/Bold) -->
@@ -40,11 +51,27 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["NailSalon", "BeautySalon", "HealthAndBeautyBusiness", "LocalBusiness"],
+        "@type": "WebSite",
+        "@id": "https://brendacastilhobeauty.pt/#website",
+        "url": "https://brendacastilhobeauty.pt/",
+        "name": "Brenda Castilho Beauty",
+        "alternateName": ["Brenda Castilho Studio Beauty & Nail Academy", "brendacastilhobeauty.pt"],
+        "publisher": {
+          "@id": "https://brendacastilhobeauty.pt/#business"
+        }
+      },
+      {
+        "@type": ["NailSalon", "BeautySalon", "HealthAndBeautyBusiness", "LocalBusiness", "Organization"],
         "@id": "https://brendacastilhobeauty.pt/#business",
         "url": "https://brendacastilhobeauty.pt/",
         "name": "Brenda Castilho Studio Beauty & Nail Academy",
         "alternateName": "Brenda Castilho Beauty",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://brendacastilhobeauty.pt/favicon-512x512.png",
+          "width": 512,
+          "height": 512
+        },
         "description": "Espaço de estética avançada, nail design de alto padrão e academia profissionalizante fundada por Brenda Castilho — ex-arquiteta e educadora internacional especializada em naturalidade. Procedimentos exclusivos de Alongamento de Unhas (Molde F1, Fibra, Soft Gel), Nivelamento Estrutural, Banho de Gel, Verniz em Gel, Plástica dos Pés, Lash Lifting, Brow Lamination, Depilação Feminina e Cursos Presenciais.",
         "image": [
           "https://brendacastilhobeauty.pt/assets/brenda-bio-dark.jpg",
